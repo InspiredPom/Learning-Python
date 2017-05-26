@@ -31,3 +31,4 @@ else:
        n2 = nth
        count += 1
         #prints all in fib sequence until nseq=count
+		#TODO: Need to sum even valued terms
