@@ -1,34 +1,21 @@
-# max amount of numbers in sequence terms
-nseq = 4000000
-
-# first two terms
 n1 = 1
-n2 = 2
-
-#Starts the count because 2-1 = 1, keeps track for sequence terms
-count = 2
-
-
-if nseq <= 0:
-   print("Integer needs to be positive")
-   #Checks if valid number
+n2 = 1
+count = 0
+sum = 0
+#Declare values
+#Numbers 1,2
+#count = number currently on
+while count < 4000000:
+#Limit of 4,000,000
+   count = (n1+n2)
+   #loop through fibi. numbers = n1 +n2 in sequence
    
-   
-elif nseq == 1:
-   print("Fibonacci sequence up to",nseq,":")
-   print(n1)
-   # if nterms = 1 , can only get 0 in sequence
-   
-   
-else:
-   print("Fibonacci sequence upto",nseq,":")
-   print(n1,",",n2,end=', ')
-   while count < nseq:
-       nth = n1 + n2
-       print(nth,end=' , ')
-       # update values, and keeps count of number in sequence
-       n1 = n2
-       n2 = nth
-       count += 1
-        #prints all in fib sequence until nseq=count
-		#TODO: Need to sum even valued terms
+   if count%2 == 0:
+     #Finds/ Checks if number even
+       sum = count + sum
+       #Adds to sum of even fib numbers
+   n1 = n2
+   n2 = count
+   #Goes to next numbers in fib sequence
+   #print sum of even fib numbers
+print (sum)
