@@ -1,8 +1,4 @@
-#ToDo: Get running
 import time
-
-#global gold
-#global apples
 gold = 90
 apples = 0
 def start():
@@ -33,8 +29,6 @@ def begin():
 		print("You currently have ",apples, "apples")
 	sell = input("Can I buy your apples?")
 	if sell == "Yes" or sell == "yes":
-		# gold
-		#global apples
 		print("You currently have", apples, "Apples")
 		print("You sold your apples")
 		gold += apples *10
