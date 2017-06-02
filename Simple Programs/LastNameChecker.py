@@ -3,11 +3,16 @@ import re
 #https://docs.python.org/2/library/re.html
 #http://regexr.com/
 
-string = "Am32423423423anda"
-string2 = re.sub('[0-9]', '', string)
-print (string2)
+inputLastName = "Ama32423423423nda"
+resultLastName = re.sub('[0-9]', '', inputLastName)
+print (resultLastName)
 
-if re.match('([A-Z])[a-z]+$', string):
-    print(string + 'is a valid last name')
+if re.match('([A-Z])[a-z]+$', inputLastName):
+    print(inputLastName + ' is a valid last name')
 else:
-    print(string + ' is not a valid last name')
+    print(inputLastName + ' is not a valid last name')
+
+if re.match('([A-Z])[a-z]+$', resultLastName):
+    print(resultLastName + ' is a valid last name')
+else:
+    print(resultLastName + ' is not a valid last name')
