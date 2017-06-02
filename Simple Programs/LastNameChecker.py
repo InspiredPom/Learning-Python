@@ -3,9 +3,9 @@ import re
 #https://docs.python.org/2/library/re.html
 #http://regexr.com/
 
-inputLastName = "Ama32423423423nda"
+inputLastName = input('Please enter a last name for validation: ')
 resultLastName = re.sub('[0-9]', '', inputLastName)
-print (resultLastName)
+print ('Edited last name: ' + resultLastName)
 
 if re.match('([A-Z])[a-z]+$', inputLastName):
     print(inputLastName + ' is a valid last name')
