@@ -4,5 +4,6 @@ import re
 #http://regexr.com/
 
 string = "Am32423423423anda"
-string = re.sub('[0-9]', '', string)
-print (string)
+string2 = re.sub('[0-9]', '', string)
+print (string2)
+
