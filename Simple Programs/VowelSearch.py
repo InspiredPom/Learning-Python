@@ -7,5 +7,3 @@ for a in mystring:
 		break
 else:
 		print(mystring, "does not have a vowel")
-		
-		#Todo: Make it so it does not read else case as well
